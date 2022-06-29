@@ -59,7 +59,7 @@ def sendmsg(str):
 
 
 def main():
-    ip = "<Enter the mgmt IP to ssh into teh device>"
+    ip = "<Enter the mgmt IP to ssh into the device>"
     find_rate(ip)
 
 
