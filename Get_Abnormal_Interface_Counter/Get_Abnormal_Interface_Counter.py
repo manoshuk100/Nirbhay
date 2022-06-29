@@ -59,7 +59,7 @@ def sendmsg(str):
 
 
 def main():
-    ip = "MOONGLADE.cisco.com"
+    ip = "<Enter the mgmt IP to ssh into teh device>"
     find_rate(ip)
 
 
