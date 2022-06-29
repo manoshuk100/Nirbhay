@@ -15,7 +15,7 @@ __version__ = "1.0"
 ###############################################################################
 #                                                                             #
 # This script will validate if any interface rate is more than usual and then #
-# reports to the user via Cisco Webex teams.       					          #
+# reports to the user via Cisco Webex teams.                                  #
 #                                                                             #
 ###############################################################################
 
