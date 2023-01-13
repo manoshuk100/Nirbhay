@@ -22,7 +22,7 @@ __version__ = "1.0"
 
 def power_off(list):
     for l in list:
-        agent = rpc.Agent("https", l, "apc1", "nbv12345")
+        agent = rpc.Agent("https", l, "username", "password")
         pdu = pdumodel.Pdu("/model/pdu/0", agent)
         # metadata = pdu.getMetaData()
         # print(metadata)
@@ -68,7 +68,7 @@ def defer_power_off(list):
 
 
 if __name__ == '__main__':
-    IP_LIST = ["10.127.49.67"]
+    IP_LIST = ["a.b.c.d"]
     Dict = {1: power_off,
             2: power_on,
             3: toggle_power,
