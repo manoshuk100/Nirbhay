@@ -35,7 +35,7 @@ def power_off(list):
 
 def power_on(list):
     for l in list:
-        agent = rpc.Agent("https", l, "apc1", "nbv12345")
+        agent = rpc.Agent("https", l, "username", "password")
         pdu = pdumodel.Pdu("/model/pdu/0", agent)
         # metadata = pdu.getMetaData()
         # print(metadata)
@@ -49,7 +49,7 @@ def power_on(list):
 
 def toggle_power(list):
     for l in list:
-        agent = rpc.Agent("https", l, "apc1", "nbv12345")
+        agent = rpc.Agent("https", l, "username", "password")
         pdu = pdumodel.Pdu("/model/pdu/0", agent)
         # metadata = pdu.getMetaData()
         # print(metadata)
