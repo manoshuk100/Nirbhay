@@ -57,10 +57,10 @@ def toggle_power(list):
         for outlet in outlets:
             print(outlet.getMetaData())
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
-            outlet[0].setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
+            outlet.setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
             time.sleep(2)
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_ON)
-            outlet[0].setPowerState(pdumodel.Outlet.PowerState.PS_ON)
+            outlet.setPowerState(pdumodel.Outlet.PowerState.PS_ON)
 
 
 def defer_power_off(list):
