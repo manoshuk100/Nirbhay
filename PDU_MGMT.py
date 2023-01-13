@@ -13,7 +13,8 @@ __version__ = "1.0"
 
 ###############################################################################
 #                                                                             #
-# This script will poweroff, poweron or toggle the outlets of RARITRAN PDUs   #
+# This script will poweroff, poweron or toggle ALL the outlets of RARITRAN    #
+# PDUs                                                                        #  
 #                                                                             #
 #                                                                             #
 ###############################################################################
@@ -29,6 +30,7 @@ def power_off(list):
         for outlet in outlets:
             print(outlet.getMetaData())
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
+            outlet.setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
 
 
 def power_on(list):
@@ -41,6 +43,7 @@ def power_on(list):
         for outlet in outlets:
             print(outlet.getMetaData())
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_ON)
+            outlet.setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
 
 
 
@@ -54,8 +57,10 @@ def toggle_power(list):
         for outlet in outlets:
             print(outlet.getMetaData())
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
+            outlet[0].setPowerState(pdumodel.Outlet.PowerState.PS_OFF)
             time.sleep(2)
             # outlets[0].setPowerState(pdumodel.Outlet.PowerState.PS_ON)
+            outlet[0].setPowerState(pdumodel.Outlet.PowerState.PS_ON)
 
 
 def defer_power_off(list):
