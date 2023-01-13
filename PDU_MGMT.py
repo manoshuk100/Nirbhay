@@ -3,6 +3,22 @@ from raritan import rpc
 from raritan.rpc import pdumodel
 
 
+__author__ = 'Manoj Kumar Shukla-manoshuk@cisco.com'
+__version__ = "1.0"
+
+#######################################################
+# Author: Manoj Kumar Shukla, Cisco Systems           #
+# Date: 13th Jan, 2023                                #
+#######################################################
+
+###############################################################################
+#                                                                             #
+# This script will poweroff, poweron or toggle the outlets of RARITRAN PDUs   #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+
 def power_off(list):
     for l in list:
         agent = rpc.Agent("https", l, "apc1", "nbv12345")
