@@ -1,9 +1,8 @@
 
 """This script assumes that there is a separate program that checks for each anomaly based on specific threshold limits and returns the results as a dictionary. It also assumes that the anomaly results are binary (i.e., occurred or not occurred).The script uses the anomaly results and the predefined anomalies and clusters to 
-calculate the percentage of occurrences for each cluster, and then uses the cluster percentages and weightings to calculate the overall risk level.The script then uses 
-a while loop to perform the check every 24 hours. You will have to add more details like logging mechanism, threshold limit for each anomaly, how to get the results from separate program and how to trigger alerts based on the overall risk level, and also exception handling. You will also have to make sure that the separate program 
+calculate the percentage of occurrences for each cluster, and then uses the cluster percentages and weightings to calculate the overall risk level.The script then uses a while loop to perform the check every 24 hours. You will have to add more details like logging mechanism, threshold limit for each anomaly, how to get the results from separate program and how to trigger alerts based on the overall risk level, and also exception handling. You will also have to make sure that the separate program 
 that you are using is running properly and providing accurate results, as the accuracy of this script depends on the accuracy of the results provided by the separate program."""
-"""
+
 
 # Script assumes that you are writing the results from a router in a CSV file
 
