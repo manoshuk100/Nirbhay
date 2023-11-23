@@ -1,6 +1,13 @@
 from netmiko import ConnectHandler
 import time
 
+__author__ = 'Manoj Kumar Shukla-manoshuk@cisco.com'
+__version__ = "1.0"
+
+#######################################################
+# Author: Manoj Kumar Shukla, Cisco Systems           #
+# Date: 23rd Nov, 2023                                #
+#######################################################
 
 # Function to execute commands on a switch
 def execute_commands(device_info, commands, prompt_pattern, iterations):
